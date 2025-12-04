@@ -1,23 +1,24 @@
 import logo from "../images/logo/make the high-qualit.png" 
-import headerImg from "../imges/background/shells.jpg"
-import headerImg2 from "../imges/background/plant-bg.jpg"
-import headerImg3 from "../imges/background/sandles.jpg"
-import socialIcon1 from "../images/icons/at.jpg"
-import socialIcon2 from "../images/icons/instagram.jpg"
-import socialIcon3 from "../images/icons/social-media.jpg"
+import headerImg from "../images/background/shells.jpg"
+import headerImg2 from "../images/background/plant-bg.jpg"
+import headerImg3 from "../images/background/sandles.jpg"
+import socialIcon1 from "../images/icons/at.png"
+import socialIcon2 from "../images/icons/instagram.png"
+import socialIcon3 from "../images/icons/social-media.png"
+import "../styles/styles.css"
 
 
 export default function Home() {
     return(
-        <body>
+        <>
             <header>
-                <div class="lft-header-flex">
+                <div className="lft-header-flex">
                     <h1>Wakanaka</h1>
                     <img src={logo} alt="header logo" />
                 </div>
                 
                 <nav>
-                    <ul class="nav-links">
+                    <ul className="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -25,28 +26,28 @@ export default function Home() {
                     </ul>
                 </nav>
             </header>
-            <section class="landing-page" id="home">
-                <div class="logo">
+            <section className="landing-page" id="home">
+                <div className="logo">
                         <img src={logo} alt="wakanaka logo" />
                         <h1>Wakanaka</h1>
                         <h2>Beauty Parlour</h2>
-                        <div class="explore-btn">
+                        <div className="explore-btn">
                             <button>Explore</button>
-                            <span class="arrow">&#10549;</span>
+                            <span className="arrow">&#10549;</span>
                         </div>
                         
                 </div>
 
-                <section class="side-imgs">
-                    <div class="float">
+                <section className="side-imgs">
+                    <div className="float">
                         <img src={headerImg} alt="" />
                     </div>
 
-                    <div class="float2">
+                    <div className="float2">
                         <img src={headerImg2} alt="" />
                     </div>
 
-                    <div class="float3">
+                    <div className="float3">
                         <img src={headerImg3} alt="" />
                     </div>
                     
@@ -54,54 +55,54 @@ export default function Home() {
             </section>
     
         <footer id="contact">
-                <div class="footer-logo">
+                <div className="footer-logo">
                     <h1>Wakanaka</h1>
-                    <img src="images/logo/make the high-qualit.jpg" alt="">
+                    <img src={logo} alt="flower icon" />
                 </div>
 
-                <div class="divider"></div>
+                <div className="divider"></div>
 
-            <div class="form-flex">
+            <div className="form-flex">
                 <form action="">
-                    <div class="name-email-flex">
-                        <div class="name-input">
-                            <label for="user-info">Name & Surname</label>
+                    <div className="name-email-flex">
+                        <div className="name-input">
+                            <label >Name & Surname</label>
                             <input type="text" name="user-name" id="name" required />
                         </div>
 
-                        <div class="email-input">
-                            <label for="user-email">Email Address<Address></Address></label>
+                        <div className="email-input">
+                            <label >Email Address</label>
                             <input type="email" name="user-email" id="email" required />
                         </div>
 
                     </div>
                     
-                    <div class="feedback-input">
-                        <label for="user-feedback">Feedback</label>
+                    <div className="feedback-input">
+                        <label >Feedback</label>
                         <textarea name="user-feedback" id="feedback"></textarea>
                     </div>
 
-                    <div class="submit">
-                        <button type="button" class="submit-btn">
-                            <span class="text">SEND</span>
-                            <span class="icon">&#9997;</span>
+                    <div className="submit">
+                        <button type="button" className="submit-btn">
+                            <span className="text">SEND</span>
+                            <span className="icon">&#9997;</span>
                         </button>
                     </div>
                 </form>
 
-                <div class="footer-info-flex">
-                        <div class="info-wrapper">
-                            <div class="ftr-info">
-                                <h3 class="contact">Contact</h3>
-                                <p class="ftr-email">patieysatiey@gmail.com</p>
+                <div className="footer-info-flex">
+                        <div className="info-wrapper">
+                            <div className="ftr-info">
+                                <h3 className="contact">Contact</h3>
+                                <p className="ftr-email">patieysatiey@gmail.com</p>
                                 <p>Tel: +27 62 698 8107</p>
                                 <p>10 Fiona Crescent,</p>
                                 <p>Brooklyn, Cape Town</p>
                             </div>
 
-                            <div class="ftr-info-2">
-                                <h3 class="quick-links">Quick Links</h3>
-                                <ul class="footer-links">
+                            <div className="ftr-info-2">
+                                <h3 className="quick-links">Quick Links</h3>
+                                <ul className="footer-links">
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#services">Services</a></li>
                                     <li><a href="#contact">Contact</a></li>
@@ -110,23 +111,23 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div class="social-media">
-                            <div class="email">
-                                <img src={socialIcon1} alt="" />
+                        <div className="social-media">
+                            <div className="email">
+                                <img src={socialIcon1} alt="email icon" />
                             </div>
 
-                            <div class="insta">
-                                <img src={socialIcon2} alt="" />
+                            <div className="insta">
+                                <img src={socialIcon2} alt="instagram icon" />
                             </div>
 
-                            <div class="facebook">
-                                <img src={socialIcon3} alt="" />
+                            <div className="facebook">
+                                <img src={socialIcon3} alt="facebook icon" />
                             </div>
                         </div>
                     </div>
             </div>
         </footer>
-</body>
+</>
     )
 }
 
