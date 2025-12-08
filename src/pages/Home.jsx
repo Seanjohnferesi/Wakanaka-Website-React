@@ -1,58 +1,30 @@
 import logo from "../images/logo/make the high-qualit.png" 
-import headerImg from "../images/background/shells.jpg"
-import headerImg2 from "../images/background/plant-bg.jpg"
-import headerImg3 from "../images/background/sandles.jpg"
+
 import socialIcon1 from "../images/icons/at.png"
 import socialIcon2 from "../images/icons/instagram.png"
 import socialIcon3 from "../images/icons/social-media.png"
 import "../styles/styles.css"
-
+import Header from "../components/Header"
+import Floats from "../components/FloatingImages"
 
 export default function Home() {
     return(
         <>
-            <header>
-                <div className="lft-header-flex">
-                    <h1>Wakanaka</h1>
-                    <img src={logo} alt="header logo" />
-                </div>
-                
-                <nav>
-                    <ul className="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </nav>
-            </header>
+           <Header />
+           <Floats />
             <section className="landing-page" id="home">
                 <div className="logo">
-                        <img src={logo} alt="wakanaka logo" />
-                        <h1>Wakanaka</h1>
-                        <h2>Beauty Parlour</h2>
-                        <div className="explore-btn">
-                            <button>Explore</button>
-                            <span className="arrow">&#10549;</span>
-                        </div>
-                        
+                    <img src={logo} alt="wakanaka logo" />
+                    <h1>Wakanaka</h1>
+                    <h2>Beauty Parlour</h2>
+                    <div className="explore-btn">
+                        <button>Explore</button>
+                        <span className="arrow">&#10549;</span>
+                    </div>
                 </div>
-
-                <section className="side-imgs">
-                    <div className="float">
-                        <img src={headerImg} alt="" />
-                    </div>
-
-                    <div className="float2">
-                        <img src={headerImg2} alt="" />
-                    </div>
-
-                    <div className="float3">
-                        <img src={headerImg3} alt="" />
-                    </div>
-                    
-                </section>
             </section>
+
+            
     
         <footer id="contact">
                 <div className="footer-logo">
