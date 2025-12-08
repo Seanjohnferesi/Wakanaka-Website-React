@@ -1,6 +1,9 @@
 import logo from "../images/logo/make the high-qualit.png" 
+import { useNavigate } from "react-router-dom"
 
 function HomeHero () {
+    const navigate = useNavigate()
+
     return(
         <section className="landing-page" id="home">
             <div className="logo">
@@ -8,7 +11,9 @@ function HomeHero () {
                 <h1>Wakanaka</h1>
                 <h2>Beauty Parlour</h2>
                 <div className="explore-btn">
-                    <button>Explore</button>
+                    <button
+                        onClick={() => navigate("/explore")}
+                    >Explore</button>
                     <span className="arrow">&#10549;</span>
                 </div>
             </div>
