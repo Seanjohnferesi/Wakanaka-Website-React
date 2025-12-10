@@ -29,4 +29,5 @@ h1, h2, p{
 
 .category > h2{
     text-align: center;
+    color: white;
 }
