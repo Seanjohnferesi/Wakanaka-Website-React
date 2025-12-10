@@ -1,0 +1,67 @@
+@layer HEADER{
+
+    header{
+        width: 100%;
+        height: 80px;
+        padding: 0 20px;
+        background-color: var(--darker-bg-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .lft-header-flex{
+        display: flex;
+        align-items: center;
+    }
+
+    .lft-header-flex > h1 {
+        font-size: 24px;
+        color: var(--txt-color);
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .lft-header-flex > img {
+        width: 60px;
+        height: 60px;
+        margin-left: -16px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /* NAVIGATION */
+    a{
+        text-decoration: none;
+        color: var(--txt-color);
+    }
+    .nav-links{
+        display: flex;
+        gap: 60px;
+        list-style-type: none;
+        /* color: var(--txt-color); */
+        font-size: 18px;
+    }
+
+    .nav-links > li{
+        cursor: pointer;
+        padding: 7px 15px;
+        border-radius: 8px;
+        transition: scale .5s, box-shadow .5s;
+        font-family: inherit;
+    }
+
+    .nav-links > li:hover{
+        background-color: #ecc5bb05;
+        color: var(--btn-color);
+        scale: 1.1;
+        box-shadow: 0 0 0 1px var(--btn-color), 0 0 0 1px var(--btn-color);
+        
+    }
+
+}

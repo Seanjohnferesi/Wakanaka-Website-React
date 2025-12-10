@@ -1,4 +1,5 @@
 import logo from "../images/logo/make the high-qualit.png" 
+import "../styles/header.css"
 
 function Header() {
     return(

@@ -1,6 +1,6 @@
 import logo from "../images/logo/make the high-qualit.png" 
 import { useNavigate } from "react-router-dom"
-import sideImg from "../images/background/nails-bg.png";
+import sideImg from "../images/background/nails-bg2.png";
 import Header from "./Header";
 
 function HomeHero () {
@@ -8,13 +8,16 @@ function HomeHero () {
 
     return(
         <>
-            <Header />
+            {/* <Header /> */}
             <section className="landing-page" id="home">
                 <div className="img-display">
                     <img src={sideImg} alt="" />
                 </div>
 
                 <div className="logo">
+
+                    <h2>Your Journey to Elegance Starts Here.</h2>
+                    <p>A full studio experience dedicated to comfort, confidence, and natural beauty.</p>
                     {/* <img src={logo} alt="wakanaka logo" />
                     <h1>Wakanaka</h1>
                     <h2>Beauty Parlour</h2> */}
