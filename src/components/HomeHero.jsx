@@ -16,8 +16,8 @@ function HomeHero () {
 
                 <div className="logo">
 
-                    <h2>Your Journey to Elegance Starts Here.</h2>
-                    <p>A full studio experience dedicated to comfort, confidence, and natural beauty.</p>
+                    <h2>Your Journey to Elegance <br /> Starts Here.</h2>
+                    <p>A full studio experience dedicated to <br /> comfort, confidence, and natural beauty.</p>
                     {/* <img src={logo} alt="wakanaka logo" />
                     <h1>Wakanaka</h1>
                     <h2>Beauty Parlour</h2> */}
