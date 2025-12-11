@@ -1,5 +1,5 @@
 body{
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .landing-page{
@@ -73,7 +73,8 @@ body{
     border-radius: 6px;
     background-color: var(--btn-color);
     font-family: inherit;
-    color: var(--bg-color);
+    color: var(--darker-g-color);
+    font-weight: 600;
     font-size: 17px;
     cursor: pointer;
 }
