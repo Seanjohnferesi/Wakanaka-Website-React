@@ -63,7 +63,7 @@ body{
 
 .explore-btn > button {
     border: none;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 6px;
     background-color: var(--btn-color);
     font-family: inherit;

@@ -1,9 +1,10 @@
 import headerImg from "../images/background/shells.jpg"
 import headerImg2 from "../images/background/plant-bg.jpg"
 import headerImg3 from "../images/background/sandles.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../styles/floats.css"
 
-function Floats() {
+function SocialMedia() {
     return (
         <section className="side-imgs">
             <div className="float">
@@ -21,4 +22,4 @@ function Floats() {
     )
 }
 
-export default Floats
+export default SocialMedia
