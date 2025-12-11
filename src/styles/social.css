@@ -1,0 +1,30 @@
+.side-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    /* box-shadow: 0 0 4px var(--txt-color) */
+    border: 1px solid white;
+    width: 100px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    margin-right: -50px;
+    cursor: pointer;
+    transition: width .8s ease;
+}
+
+.icon1, .icon2, .icon3{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover{
+    color: var(--btn-color);
+}
+
+.side-icons:hover{
+   width: 150px;
+}

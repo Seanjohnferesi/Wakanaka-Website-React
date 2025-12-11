@@ -2,6 +2,7 @@ import logo from "../images/logo/make the high-qualit.png"
 import { useNavigate } from "react-router-dom"
 import sideImg from "../images/background/nails-bg2.png";
 import Header from "./Header";
+import SocialMedia from "./SocialMedia";
 
 function HomeHero () {
     const navigate = useNavigate()
@@ -13,7 +14,7 @@ function HomeHero () {
                 <div className="img-display">
                     <img src={sideImg} alt="" />
                 </div>
-
+                <SocialMedia />
                 <div className="logo">
 
                     <h2>Your Journey to Elegance <br /> Starts Here.</h2>

@@ -1,22 +1,20 @@
-import headerImg from "../images/background/shells.jpg"
-import headerImg2 from "../images/background/plant-bg.jpg"
-import headerImg3 from "../images/background/sandles.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import "../styles/floats.css"
+import { faWhatsapp, faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";import "../styles/floats.css"
+import "../styles/social.css"
 
 function SocialMedia() {
     return (
-        <section className="side-imgs">
-            <div className="float">
-                <img src={headerImg} alt="" />
+        <section className="side-icons">
+            <div>
+                <FontAwesomeIcon icon={faWhatsapp} className='icon1'/>
             </div>
 
-            <div className="float2">
-                <img src={headerImg2} alt="" />
+            <div>
+                <FontAwesomeIcon icon={faInstagram} className='icon2' />
             </div>
 
-            <div className="float3">
-                <img src={headerImg3} alt="" />
+            <div>
+                <FontAwesomeIcon icon={faFacebookF} className='icon3' />
             </div>
         </section>
     )
