@@ -40,6 +40,8 @@
         text-decoration: none;
         color: var(--txt-color);
     }
+
+
     .nav-links{
         display: flex;
         gap: 60px;
@@ -52,16 +54,23 @@
         cursor: pointer;
         padding: 7px 15px;
         border-radius: 8px;
-        transition: scale .5s, box-shadow .5s;
+        transition: background-color .7s ease, color 13s ease;
         font-family: inherit;
     }
 
     .nav-links > li:hover{
-        background-color: #ecc5bb05;
-        color: var(--btn-color);
-        scale: 1.1;
-        box-shadow: 0 0 0 1px var(--btn-color), 0 0 0 1px var(--btn-color);
+        background-color: #ecc5bb0e;
+        color: var(--bg-color);
+    }
+
+    li:hover > a{
+        background-color: #ecc5bb00;
+        color: var(--bg-color);
         
+    }
+
+    li > a{
+        transition: color .8s ease;
     }
 
 }
