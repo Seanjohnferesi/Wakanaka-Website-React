@@ -16,6 +16,8 @@ body{
     position: absolute;
     right: 10%;
     top: 2%;
+    animation: appear 5s ease ;
+    animation-fill-mode: forwards;
 }
 
 .logo{
@@ -27,14 +29,6 @@ body{
     position: absolute;
     top: 30%;
     left: 5%;
-}
-
-.logo > img {
-    width: 350px;
-    height: 350px;
-    cursor: pointer;
-    animation: logo 3s;
-    margin-left: -6px;
 }
 
 .logo > h2{
@@ -94,3 +88,50 @@ body{
     transform: translateY(15px);
 }
 
+@layer KEYFRAMES{
+
+    @keyframes name{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(-50%);
+        }
+    }
+
+    @keyframes logo {
+        0%{scale: 0;}
+
+        100%{transform: rotate(360deg);}
+    }
+
+    @keyframes floats{
+        0%{ transform: translateY(0); }
+        50%  { 
+            transform: translateY(-5%); 
+        }
+        100% { transform: translateY(0); } 
+    }
+
+    @keyframes spin{
+        0%{
+            transform: rotateY(-360deg);
+        }
+        
+        100%{
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes appear{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+}
