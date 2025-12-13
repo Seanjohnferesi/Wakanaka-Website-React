@@ -6,29 +6,40 @@ body{
     position: relative;
     width: 100%;
     height: 664px;
+    padding-right: 8%;
     background-color: var(--darker-bg-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .img-display > img{
     width: 400px;
     height: 650px;
     object-fit: cover;
-    position: absolute;
+    /* position: absolute;
     right: 10%;
-    top: 2%;
+    top: 2%; */
     animation: appear 5s ease ;
     animation-fill-mode: forwards;
 }
 
-.logo{
+.logo-container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    grid-column: span 3;
+    padding-left: 8%;
+}
+
+.logo{
     text-align: center;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
     top: 30%;
     left: 5%;
+     */
 }
 
 .logo > h2{

@@ -9,25 +9,24 @@ function HomeHero () {
 
     return(
         <>
-            {/* <Header /> */}
             <section className="landing-page" id="home">
+                <SocialMedia />
+
+                <div className="logo-container">
+                    <div className="logo">
+                        <h2>Your Journey to Elegance <br /> Starts Here.</h2>
+                        <p>A full studio experience dedicated to <br /> comfort, confidence, and natural beauty.</p>
+                        <div className="explore-btn">
+                            <button
+                                onClick={() => navigate("/explore")}
+                            >Explore</button>
+                            <span className="arrow">&#10549;</span>
+                        </div>
+                    </div>
+                </div>
+                
                 <div className="img-display">
                     <img src={sideImg} alt="" />
-                </div>
-                <SocialMedia />
-                <div className="logo">
-
-                    <h2>Your Journey to Elegance <br /> Starts Here.</h2>
-                    <p>A full studio experience dedicated to <br /> comfort, confidence, and natural beauty.</p>
-                    {/* <img src={logo} alt="wakanaka logo" />
-                    <h1>Wakanaka</h1>
-                    <h2>Beauty Parlour</h2> */}
-                    <div className="explore-btn">
-                        <button
-                            onClick={() => navigate("/explore")}
-                        >Explore</button>
-                        <span className="arrow">&#10549;</span>
-                    </div>
                 </div>
             </section>
         </>
