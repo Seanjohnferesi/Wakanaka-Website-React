@@ -5,7 +5,7 @@ body{
 .landing-page{
     position: relative;
     width: 100%;
-    height: 664px;
+    height: 650px;
     padding-right: 8%;
     background-color: var(--darker-bg-color);
     display: grid;
@@ -16,9 +16,6 @@ body{
     width: 400px;
     height: 650px;
     object-fit: cover;
-    /* position: absolute;
-    right: 10%;
-    top: 2%; */
     animation: appear 5s ease ;
     animation-fill-mode: forwards;
 }
@@ -36,10 +33,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* position: absolute;
-    top: 30%;
-    left: 5%;
-     */
 }
 
 .logo > h2{
