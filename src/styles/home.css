@@ -71,7 +71,7 @@ body{
     border-radius: 6px;
     background-color: var(--btn-color);
     font-family: inherit;
-    color: var(--darker-g-color);
+    color: var(--darker-bg-color);
     font-weight: 600;
     font-size: 17px;
     cursor: pointer;

@@ -8,12 +8,11 @@ function MainContent() {
             <div className="main-content">
                 <div className="nail-services">
                     <h2>Nails</h2>
-                    {/* <div className="manicure">
-                        <img src={nails} alt="" />
-                    </div> */}
+                    <button className="services-btn">Explore</button>
                 </div>
                 <div className="spa-treatments">
                     <h2>Spa Treatments</h2>
+                    <button className="services-btn">Explore</button>
                 </div>
             </div>
         </section>

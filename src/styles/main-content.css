@@ -26,8 +26,21 @@
     color: var(--darker-bg-color);
 }
 
+:root{
+    --nails: url(../images/background/nail-services.png);
+    --spa-treatment: url(../images/background/A\ serene\ spa\ setting.png);
+}
+
 .nail-services{
-    background-image: url(../images/background/nail-services.png);
+    background-image: var(--nails);
+    
+}
+
+.spa-treatments{
+    background-image: var(--spa-treatment);
+}
+
+.nail-services , .spa-treatments{
     background-size: cover;
     background-position: center;
     position: relative;
@@ -38,28 +51,35 @@
     font-size: 2.3rem;
 }
 
-.nail-services::after {
+.nail-services::before, .spa-treatments::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: black;
+    background: linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.35));
     z-index: -1;
-    opacity: .5;
+    opacity: .45;
+    border-radius: inherit;
 }
 
-.spa-treatments{
-    background-image: url(../images/background/A\ serene\ spa\ setting.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    isolation: isolate;
-}
+.services-btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--btn-color);
+    font-family: inherit;
+    color: var(--darker-bg-color);
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
 
-.spa-treatments::after {
-    content: "";
     position: absolute;
-    inset: 0;
-    background-color: black;
-    z-index: -1;
-    opacity: .55;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease-in-out
+}
+
+.services-btn:hover{
+    opacity: .8;
 }
