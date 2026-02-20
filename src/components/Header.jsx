@@ -15,7 +15,7 @@ function Header() {
             <nav>
                 <ul className="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li onClick={() => navigate("/explore")}>Services</li>
                     <li onClick={() => navigate("/gallery")}><a>Gallery</a></li>
                 </ul>
                 <button className="book-btn">Book</button>

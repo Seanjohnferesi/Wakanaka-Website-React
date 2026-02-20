@@ -65,6 +65,7 @@
         font-family: inherit;
     }
 
+
     .nav-links > li:hover{
         background-color: #ecc5bb0e;
         color: var(--bg-color);

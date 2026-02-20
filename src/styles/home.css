@@ -65,7 +65,7 @@ body{
     transition: 1s ease;
 }   
 
-.explore-btn > button {
+.explore-btn > a > button {
     border: none;
     padding: 10px 20px;
     border-radius: 6px;

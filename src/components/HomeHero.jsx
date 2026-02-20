@@ -14,12 +14,10 @@ function HomeHero () {
 
                 <div className="logo-container">
                     <div className="logo">
-                        <h2>Your Journey to Elegance <br /> Starts Here.</h2>
+                        <h2>Expert Care in the Comfort of Your Home <br /> Starts Here.</h2>
                         <p>A full studio experience dedicated to <br /> comfort, confidence, and natural beauty.</p>
                         <div className="explore-btn">
-                            <button
-                                onClick={() => navigate("/explore")}
-                            >Explore</button>
+                            <a href="#main-content-cont"><button>Explore</button></a>
                             <span className="arrow">&#10549;</span>
                         </div>
                     </div>

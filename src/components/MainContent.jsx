@@ -3,7 +3,7 @@ import nails from "../images/icons/nail-polish.png"
 
 function MainContent() {
     return (
-        <section className="main-content-cont"> 
+        <section className="main-content-cont" id="main-content-cont"> 
             <h1>Services</h1>
             <div className="main-content">
                 <div className="nail-services">
